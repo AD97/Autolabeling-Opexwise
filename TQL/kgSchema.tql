@@ -1,0 +1,18 @@
+define 
+    mined-relation sub relation,
+        owns verb,
+        relates subject,
+        relates object;
+
+    subject sub entity,
+        owns token,
+        plays mined-relation:subject;
+    
+    object sub entity,
+        owns token,
+        plays mined-relation:object;
+    
+    token sub attribute,
+     value string;
+    verb sub attribute,
+     value string;
